@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-animation-area {
+  display: flex;
+  gap: 20px;
+}
+
+.loading-circle {
+  height: 30px;
+  width: 30px;
+  min-height: 30px;
+  min-width: 30px;
+  background-color: grey;
+  border-radius: 15px;
+  animation: example 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes example {
+  from {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: grey;
+  }
+  to {
+    height: 35px;
+    width: 35px;
+    border-radius: 17.5px;
+    background-color: rgb(71, 70, 70);
+  }
+}

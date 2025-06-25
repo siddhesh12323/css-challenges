@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+}
+
+.container {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    display: flex;
+    height: 150px;
+    width: 225px;
+}
+
+.flag-stripe {
+    flex-grow: 1;
+}
+
+.blue-stripe {
+    background-color: blue;
+}
+
+.white-stripe {
+    background-color: white;
+}
+
+.red-stripe {
+    background-color: red;
+}

@@ -1,0 +1,62 @@
+body,
+html {
+  margin: 0;
+}
+
+.container {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.archery-target {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-circle {
+  min-height: 100px;
+  min-width: 100px;
+  height: 240px;
+  width: 240px;
+  background-color: black;
+  border-radius: 120px;
+}
+
+.blue-circle {
+  min-height: 80px;
+  min-width: 80px;
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  border-radius: 100px;
+}
+
+.red-circle {
+    min-height: 60px;
+    min-width: 60px;
+    height: 160px;
+    width: 160px;
+    background-color: red;
+    border-radius: 80px;
+}
+
+.yellow-circle {
+    min-height: 40px;
+    min-width: 40px;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50px;
+}

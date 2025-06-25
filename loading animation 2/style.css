@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-area {
+  display: flex;
+  gap: 20px;
+}
+
+.square {
+    height: 30px;
+    width: 30px;
+    min-height: 30px;
+    min-width: 30px;
+    animation: rotate-square 2s ease-in-out infinite;
+}
+
+.square-1 {
+  background-color: red;
+}
+
+.square-2 {
+  background-color: green;
+}
+
+.square-3 {
+  background-color: blue;
+}
+
+@keyframes rotate-square {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(135deg);
+  }
+  75% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

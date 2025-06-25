@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+}
+
+.container {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text:after {
+    padding: 4px;
+    margin-left: 4px;
+    content: "coding";
+    border-radius: 10px;
+    background-color: aqua;
+    animation: text-swap 10s ease-in-out infinite alternate;
+}
+
+@keyframes text-swap {
+    0% {
+        content: "coding";
+    }
+    25% {
+        content: "sleeping";
+    }
+    50% {
+        content: "PUBG";
+    }
+    75% {
+        content: "watching anime";
+    }
+    100% {
+        content: "learning new things";
+    }
+}
