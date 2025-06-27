@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+
+.white-stripe {
+    width: 100px;
+    height: 200px;
+    background-color: white;
+}
+
+.red-stripe {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+
+.green-stripe {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
