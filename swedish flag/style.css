@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+}
+
+.container {
+    height: 100dvh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    width: 500px;
+    height: 312.5px;
+    background-color: #0269a6;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-stripe {
+    background-color: yellow;
+}
+
+.horizontal-stripe {
+    width: inherit;
+    height: 62.5px;
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+}
+
+.vertical-stripe {
+    height: inherit;
+    width: 62.5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 30%;
+}

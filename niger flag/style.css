@@ -1,0 +1,52 @@
+:root {
+    --orange: #e15307;
+    --white: #ffffff;
+    --green: #10af2a;
+    --flag-height: 350px;
+}
+
+body, html {
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    height: 100dvh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    height: var(--flag-height);
+    width: calc(7/6 * var(--flag-height));
+    background-color: var(--white);
+}
+
+.stripe {
+    height: calc(1/3 * var(--flag-height));
+    width: inherit;
+}
+
+.orange-stripe {
+    background-color: var(--orange);
+}
+
+.white-stripe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.green-stripe {
+    background-color: var(--green);
+}
+
+.circle {
+    height: calc(85/100 * 1/3 * var(--flag-height));
+    width: calc(85/100 * 1/3 * var(--flag-height));
+    border-radius: calc(85/100 * 1/6 * var(--flag-height));
+    background-color: var(--orange);
+}
