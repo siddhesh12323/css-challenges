@@ -1,6 +1,6 @@
 :root {
-    --card-height: 500px;
-    --card-width: 500px;
+    --card-height: 600px;
+    --card-width: 400px;
     --card-padding: 30px;
 }
 
@@ -28,7 +28,19 @@ html, body {
 }
 
 .image {
-    width: calc(var(--card-width) - (2 * var(--card-padding)));
-    height: calc(var(--card-width) - (2 * var(--card-padding)));
-    border-radius: calc((var(--card-width) - (2 * var(--card-padding))) / 2);
+    /* width: calc(var(--card-width) - (2 * var(--card-padding))); */
+    /* height: calc(var(--card-width) - (2 * var(--card-padding))); */
+    /* border-radius: calc((var(--card-width) - (2 * var(--card-padding))) / 2); */
+    /* width: 340px;
+    height: 340px; */
+    border-radius: calc(var(--card-width) / 2);
+    align-self: center;
+}
+
+.profile-image{
+    width: 100%;
+    height: var(--card-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
