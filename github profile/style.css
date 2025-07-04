@@ -1,46 +1,133 @@
 :root {
-    --card-height: 600px;
-    --card-width: 400px;
-    --card-padding: 30px;
+  --card-height: 600px;
+  --card-width: 400px;
+  --card-padding: 20px;
+  --font-main: "Noto Sans", sans-serif;
 }
 
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: white;
 }
 
 .container {
-    height: 100dvh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    width: var(--card-width);
-    height: var(--card-height);
-    padding: var(--card-padding);
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  width: var(--card-width);
+  padding: var(--card-padding);
+  background-color: #0d1117;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 
 .image {
-    /* width: calc(var(--card-width) - (2 * var(--card-padding))); */
-    /* height: calc(var(--card-width) - (2 * var(--card-padding))); */
-    /* border-radius: calc((var(--card-width) - (2 * var(--card-padding))) / 2); */
-    /* width: 340px;
-    height: 340px; */
-    border-radius: calc(var(--card-width) / 2);
-    align-self: center;
+  border-radius: 50%;
+  align-self: center;
+  border: 2px solid #3d444d;
 }
 
-.profile-image{
-    width: 100%;
-    height: var(--card-width);
+.profile-image {
+  width: 100%;
+  height: var(--card-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-name {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.user-id {
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #9198a1;
+}
+
+.sub {
+    color: #9198a1;
+    font-size: 14px;
+}
+
+.bio {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+.button {
+  width: 100%;
+}
+
+.edit-button {
+  margin-bottom: 10px;
+  width: 100%;
+  color: #f0f6fc;
+  background-color: #212830;
+  border-color: #3d444d;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+
+.edit-button:hover {
+  background-color: #454b52;
+}
+
+.social-count {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: #9198a1;
+}
+
+.count-text {
+    font-weight: 600;
+}
+
+.count-identifier-text {
+    font-weight: 300;
+}
+
+.other-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.25rem;
+    padding-inline-start: 0px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    font-size: 14px;
 }
